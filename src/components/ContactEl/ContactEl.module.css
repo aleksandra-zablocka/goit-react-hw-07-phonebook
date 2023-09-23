@@ -1,0 +1,30 @@
+.contactEl {
+  width: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* gap: 10px; */
+}
+
+.removeBtn {
+  font-size: 10px;
+  border-radius: 7px;
+  color: white;
+  /* background-color: #f08080; */
+  background-color: #6a7dfbdf;
+  padding: 5px 20px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.removeBtn:hover {
+  /* background-color: #e65c5c; */
+  background-color: #485ff6df;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.2);
+}
+
+p {
+  font-size: 12px;
+  margin: 0;
+}

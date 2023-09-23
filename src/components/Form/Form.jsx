@@ -1,10 +1,12 @@
 import css from './Form.module.css';
 import { useState } from 'react';
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import { addContact } from 'redux/contactsSlice';
+import { selectContacts } from 'redux/selectors';
 
 const Form = () => {
   const dispatch = useDispatch();
+  const contacts = useSelector(selectContacts);
 
   const [contact, setContact] = useState({
     name: '',

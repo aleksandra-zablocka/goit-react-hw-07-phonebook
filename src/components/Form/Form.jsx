@@ -6,7 +6,7 @@ import { selectContacts } from 'redux/selectors';
 
 const Form = () => {
   const dispatch = useDispatch();
-  const contacts = useSelector(selectContacts);
+  // const contacts = useSelector(selectContacts);
 
   const [contact, setContact] = useState({
     name: '',

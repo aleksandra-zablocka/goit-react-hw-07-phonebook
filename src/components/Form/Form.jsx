@@ -18,7 +18,7 @@ const Form = () => {
     event.preventDefault();
 
     if (contact.name && contact.number) {
-      dispatch(addContact({ name: contact.name, number: contact.number }));
+      dispatch(addContact({ name: contact.name, phone: contact.number }));
       setContact({ name: '', number: '' });
     }
   };

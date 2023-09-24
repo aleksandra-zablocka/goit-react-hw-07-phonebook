@@ -3,10 +3,10 @@
   margin: 20px;
   flex-direction: column;
   align-items: center;
-}
+  }
 
 ul {
-  margin: 10px;
+    margin: 10px;
   gap: 10px;
   font-size: 16px;
   display: flex;
@@ -17,7 +17,7 @@ ul {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1);
-  width: 300px;
+  width: 350px;
 }
 
 .noContacts {

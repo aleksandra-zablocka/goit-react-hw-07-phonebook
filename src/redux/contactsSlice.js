@@ -8,6 +8,19 @@ const contactsSlice = createSlice({
     error: null,
   },
   reducers: {
+    fetchingInProgress(state) {
+      state.isLoading = true;
+    },
+    fetchingSuccess(state, action) {
+      state.isLoading = false;
+      state.error = null;
+      state.contacts = action.payload;
+    },
+    fetchingError(state, action) {
+      state.isLoading = false;
+      state.error = action.payload;
+    },
+
     addContact: {
       reducer(state, action) {
         const { name, number } = action.payload;
@@ -28,4 +41,7 @@ const contactsSlice = createSlice({
 });
 
 export const { addContact, removeContact } = contactsSlice.actions;
+
+export const { fetchingInProgress, fetchingSuccess, fetchingError } =
+  contactsSlice.actions;
 export const contactsReducer = contactsSlice.reducer;

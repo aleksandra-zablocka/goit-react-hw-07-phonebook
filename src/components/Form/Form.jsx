@@ -1,7 +1,7 @@
 import css from './Form.module.css';
 import { useState } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { addContact } from 'redux/contactsSlice';
+import { addContact } from 'redux/operations/operations';
 import { selectContacts } from 'redux/selectors';
 
 const Form = () => {
